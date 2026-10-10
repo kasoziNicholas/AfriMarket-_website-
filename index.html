@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Directory of companies listed on African stock exchanges. Informational only, not investment advice.">
+  <meta name="referrer" content="no-referrer">
+  <title>AfriMarket Equities - African Stock Exchanges Directory</title>
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/vendor/fa/all.min.css">
+</head>
+<body class="bg-slate-950 text-slate-100 light:bg-slate-50 light:text-slate-800 min-h-screen transition-colors duration-200 flex flex-col">
+  <a href="#main" class="skip-link bg-emerald-500 text-slate-950 px-3 py-2 rounded font-semibold">Skip to content</a>
+
+  <header class="sticky top-0 z-40 w-full border-b border-slate-800 light:border-slate-200 bg-brand-navy/95 light:bg-white/95 backdrop-blur">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <button type="button" data-tab="directory" class="tab-link flex items-center gap-3 text-left" aria-label="AfriMarket Equities home">
+          <span class="w-10 h-10 rounded-xl bg-gradient-to-tr from-emerald-500 to-amber-500 flex items-center justify-center text-slate-950 font-black text-xl shadow-lg shadow-emerald-500/20">A</span>
+          <span>
+            <span class="block text-xl font-bold tracking-tight text-white light:text-slate-900">AfriMarket <span class="text-emerald-500">Equities</span></span>
+            <span class="block text-[10px] text-slate-400 -mt-1 font-medium tracking-wider uppercase">African Listed Companies Directory</span>
+          </span>
+        </button>
+
+        <nav class="hidden md:flex space-x-1" aria-label="Primary">
+          <button type="button" data-tab="directory" class="nav-btn tab-link px-4 py-2 rounded-lg text-sm flex items-center gap-2"><i class="fa-solid fa-list-ul"></i> Directory</button>
+          <button type="button" data-tab="analytics" class="nav-btn tab-link px-4 py-2 rounded-lg text-sm flex items-center gap-2"><i class="fa-solid fa-chart-pie"></i> Analytics</button>
+          <button type="button" data-tab="exchanges" class="nav-btn tab-link px-4 py-2 rounded-lg text-sm flex items-center gap-2"><i class="fa-solid fa-building-columns"></i> Exchanges</button>
+          <button type="button" data-tab="watchlist" class="nav-btn tab-link px-4 py-2 rounded-lg text-sm flex items-center gap-2"><i class="fa-solid fa-star text-amber-400"></i> Watchlist <span id="watchlist-badge" class="bg-amber-500 text-slate-950 text-[10px] font-bold px-1.5 rounded-full hidden">0</span></button>
+        </nav>
+
+        <div class="flex items-center gap-3">
+          <button type="button" id="theme-toggle" class="p-2 rounded-lg border border-slate-700 light:border-slate-300 text-slate-300 light:text-slate-700 hover:bg-slate-800 light:hover:bg-slate-100 transition" aria-label="Toggle light and dark theme">
+            <i class="fa-solid fa-circle-half-stroke"></i>
+          </button>
+          <button type="button" id="export-btn" class="hidden sm:flex items-center gap-2 px-3.5 py-2 rounded-lg bg-slate-800 light:bg-slate-200 hover:bg-slate-700 light:hover:bg-slate-300 text-xs font-semibold text-slate-200 light:text-slate-800 transition border border-slate-700 light:border-slate-300">
+            <i class="fa-solid fa-download text-emerald-400"></i> Export CSV
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="md:hidden flex border-t border-slate-800 light:border-slate-200 overflow-x-auto py-2 px-3 gap-2 custom-scrollbar">
+      <button type="button" data-tab="directory" class="nav-btn tab-link whitespace-nowrap px-3 py-1.5 rounded-lg text-xs"><i class="fa-solid fa-list-ul mr-1"></i> Directory</button>
+      <button type="button" data-tab="analytics" class="nav-btn tab-link whitespace-nowrap px-3 py-1.5 rounded-lg text-xs"><i class="fa-solid fa-chart-pie mr-1"></i> Analytics</button>
+      <button type="button" data-tab="exchanges" class="nav-btn tab-link whitespace-nowrap px-3 py-1.5 rounded-lg text-xs"><i class="fa-solid fa-building-columns mr-1"></i> Exchanges</button>
+      <button type="button" data-tab="watchlist" class="nav-btn tab-link whitespace-nowrap px-3 py-1.5 rounded-lg text-xs"><i class="fa-solid fa-star mr-1 text-amber-400"></i> Watchlist</button>
+    </div>
+  </header>
+
+  <div id="data-banner" class="bg-amber-500/10 border-b border-amber-500/30 text-amber-300 light:text-amber-800 text-xs px-4 py-2 text-center hidden" role="status"></div>
+
+  <section class="bg-slate-900/80 light:bg-slate-100 border-b border-slate-800 light:border-slate-200 py-6" aria-label="Market overview">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div class="glass-panel p-4 rounded-xl">
+          <p class="text-xs font-medium text-slate-400 uppercase tracking-wider">Directory Equities</p>
+          <h3 id="stat-companies" class="text-2xl font-extrabold text-white light:text-slate-900 mt-1">-</h3>
+          <p class="text-[11px] text-emerald-400 mt-1">Companies in this directory</p>
+        </div>
+        <div class="glass-panel p-4 rounded-xl">
+          <p class="text-xs font-medium text-slate-400 uppercase tracking-wider">Stock Exchanges</p>
+          <h3 id="stat-exchanges" class="text-2xl font-extrabold text-white light:text-slate-900 mt-1">-</h3>
+          <p class="text-[11px] text-amber-400 mt-1">JSE, NGX, EGX, BRVM and more</p>
+        </div>
+        <div class="glass-panel p-4 rounded-xl">
+          <p class="text-xs font-medium text-slate-400 uppercase tracking-wider">Combined Market Cap</p>
+          <h3 id="stat-cap" class="text-2xl font-extrabold text-white light:text-slate-900 mt-1">-</h3>
+          <p class="text-[11px] text-sky-400 mt-1">Sum of listed companies below</p>
+        </div>
+        <div class="glass-panel p-4 rounded-xl">
+          <p class="text-xs font-medium text-slate-400 uppercase tracking-wider">Sectors</p>
+          <h3 id="stat-sectors" class="text-2xl font-extrabold text-white light:text-slate-900 mt-1">-</h3>
+          <p class="text-[11px] text-purple-400 mt-1">Finance, telecom, mining and more</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main id="main" class="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <div id="load-error" class="hidden glass-panel p-6 rounded-2xl text-center text-rose-300 mb-6" role="alert"></div>
+
+    <!-- Directory -->
+    <div id="tab-directory" class="tab-content space-y-6">
+      <div class="glass-panel p-5 rounded-2xl">
+        <div class="flex flex-col lg:flex-row gap-4 items-center justify-between">
+          <div class="relative w-full lg:w-96">
+            <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400"></i>
+            <input type="search" id="search-input" maxlength="60" autocomplete="off" aria-label="Search companies" placeholder="Search company, ticker or country..."
+              class="w-full pl-10 pr-4 py-2.5 bg-slate-900/90 light:bg-white border border-slate-700 light:border-slate-300 rounded-xl text-sm text-slate-100 light:text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-emerald-500">
+          </div>
+          <div class="flex flex-wrap items-center gap-2.5 w-full lg:w-auto">
+            <select id="filter-region" aria-label="Filter by region" class="bg-slate-900 light:bg-white border border-slate-700 light:border-slate-300 rounded-xl px-3 py-2 text-xs font-medium text-slate-200 light:text-slate-800 focus:outline-none focus:ring-2 focus:ring-emerald-500"><option value="">All Regions</option></select>
+            <select id="filter-exchange" aria-label="Filter by exchange" class="bg-slate-900 light:bg-white border border-slate-700 light:border-slate-300 rounded-xl px-3 py-2 text-xs font-medium text-slate-200 light:text-slate-800 focus:outline-none focus:ring-2 focus:ring-emerald-500"><option value="">All Exchanges</option></select>
+            <select id="filter-sector" aria-label="Filter by sector" class="bg-slate-900 light:bg-white border border-slate-700 light:border-slate-300 rounded-xl px-3 py-2 text-xs font-medium text-slate-200 light:text-slate-800 focus:outline-none focus:ring-2 focus:ring-emerald-500"><option value="">All Sectors</option></select>
+            <div class="flex items-center bg-slate-900 light:bg-slate-200 p-1 rounded-xl border border-slate-700 light:border-slate-300 ml-auto lg:ml-0">
+              <button type="button" id="btn-view-cards" class="view-btn text-xs px-2.5 py-1.5 rounded-lg flex items-center gap-1 font-semibold"><i class="fa-solid fa-grip"></i> Cards</button>
+              <button type="button" id="btn-view-table" class="view-btn text-xs px-2.5 py-1.5 rounded-lg flex items-center gap-1 font-semibold"><i class="fa-solid fa-list"></i> Table</button>
+            </div>
+            <button type="button" id="reset-btn" class="px-3 py-2 rounded-xl bg-slate-800 light:bg-slate-200 hover:bg-slate-700 text-xs font-medium text-slate-300 light:text-slate-700 transition" aria-label="Reset filters"><i class="fa-solid fa-rotate-left"></i></button>
+          </div>
+        </div>
+        <div class="mt-3 pt-3 border-t border-slate-800/60 light:border-slate-200/60 flex items-center justify-between text-xs text-slate-400">
+          <div>Showing <span id="filtered-count" class="font-bold text-emerald-400">0</span> listed companies</div>
+          <div id="active-filter-tags" class="flex flex-wrap gap-1.5"></div>
+        </div>
+      </div>
+
+      <div id="cards-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5"></div>
+
+      <div id="table-container" class="hidden glass-panel rounded-2xl overflow-hidden">
+        <div class="overflow-x-auto custom-scrollbar">
+          <table class="w-full text-left text-sm text-slate-300 light:text-slate-700">
+            <thead class="bg-slate-900/90 light:bg-slate-100 text-xs uppercase font-semibold text-slate-400 light:text-slate-500 border-b border-slate-800 light:border-slate-200">
+              <tr>
+                <th class="py-3.5 px-4">Company &amp; Ticker</th>
+                <th class="py-3.5 px-4">Exchange / Country</th>
+                <th class="py-3.5 px-4">Sector</th>
+                <th class="py-3.5 px-4 text-right">Market Cap</th>
+                <th class="py-3.5 px-4 text-right">Share Price</th>
+                <th class="py-3.5 px-4 text-right">1Y Change</th>
+                <th class="py-3.5 px-4 text-center">Save</th>
+              </tr>
+            </thead>
+            <tbody id="companies-table-body" class="divide-y divide-slate-800/50 light:divide-slate-200"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- Analytics -->
+    <div id="tab-analytics" class="tab-content hidden space-y-8">
+      <div>
+        <h2 class="text-2xl font-bold text-white light:text-slate-900">Exchange &amp; Sector Insights</h2>
+        <p class="text-sm text-slate-400">Breakdowns based on the companies in this directory.</p>
+      </div>
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <div class="glass-panel p-5 rounded-2xl">
+          <h3 class="font-bold text-base text-slate-100 light:text-slate-900 mb-4"><i class="fa-solid fa-chart-pie text-emerald-400 mr-2"></i>Market Cap by Sector (USD bn)</h3>
+          <div class="relative h-64 sm:h-80"><canvas id="sectorChart" role="img" aria-label="Doughnut chart of market capitalization by sector"></canvas></div>
+        </div>
+        <div class="glass-panel p-5 rounded-2xl">
+          <h3 class="font-bold text-base text-slate-100 light:text-slate-900 mb-4"><i class="fa-solid fa-chart-column text-amber-400 mr-2"></i>Companies by Region</h3>
+          <div class="relative h-64 sm:h-80"><canvas id="regionalChart" role="img" aria-label="Bar chart of companies by region"></canvas></div>
+        </div>
+      </div>
+      <div class="glass-panel p-6 rounded-2xl">
+        <h3 class="text-lg font-bold text-white light:text-slate-900 mb-4"><i class="fa-solid fa-trophy text-amber-400 mr-2"></i>Top 10 by Market Capitalization</h3>
+        <div class="overflow-x-auto custom-scrollbar">
+          <table class="w-full text-left text-sm">
+            <thead class="bg-slate-900/90 light:bg-slate-200 text-xs uppercase font-semibold text-slate-400 light:text-slate-600 border-b border-slate-800">
+              <tr><th class="py-3 px-4">Rank</th><th class="py-3 px-4">Company</th><th class="py-3 px-4">Ticker</th><th class="py-3 px-4">Sector</th><th class="py-3 px-4 text-right">Market Cap</th><th class="py-3 px-4 text-right">1Y Change</th></tr>
+            </thead>
+            <tbody id="top10-table-body" class="divide-y divide-slate-800/60 light:divide-slate-200"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- Exchanges -->
+    <div id="tab-exchanges" class="tab-content hidden space-y-6">
+      <div class="max-w-3xl">
+        <h2 class="text-2xl font-bold text-white light:text-slate-900">Major African Stock Exchanges</h2>
+        <p class="text-sm text-slate-400 mt-1">Approximate profiles of key exchanges. Figures are rounded estimates; check each exchange for official data.</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="exchanges-cards-grid"></div>
+    </div>
+
+    <!-- Watchlist -->
+    <div id="tab-watchlist" class="tab-content hidden space-y-6">
+      <div class="flex items-center justify-between">
+        <div>
+          <h2 class="text-2xl font-bold text-white light:text-slate-900"><i class="fa-solid fa-star text-amber-400 mr-2"></i>My Watchlist</h2>
+          <p class="text-sm text-slate-400 mt-1">Saved only in this browser (localStorage). It is never sent to a server.</p>
+        </div>
+        <button type="button" id="clear-watchlist-btn" class="px-3.5 py-2 rounded-xl bg-red-500/10 hover:bg-red-500/20 text-red-400 border border-red-500/20 text-xs font-semibold transition"><i class="fa-solid fa-trash mr-1"></i> Clear</button>
+      </div>
+      <div id="watchlist-empty" class="glass-panel p-12 text-center rounded-2xl">
+        <div class="w-16 h-16 rounded-full bg-slate-800/80 light:bg-slate-200 flex items-center justify-center mx-auto mb-4 text-slate-500"><i class="fa-regular fa-star text-2xl"></i></div>
+        <h3 class="text-lg font-bold text-slate-200 light:text-slate-800">Your watchlist is empty</h3>
+        <p class="text-sm text-slate-400 max-w-md mx-auto mt-1 mb-6">Click the star on any company to save it here.</p>
+        <button type="button" data-tab="directory" class="tab-link px-5 py-2.5 rounded-xl bg-emerald-500 hover:bg-emerald-600 text-slate-950 font-bold text-sm transition">Explore the directory</button>
+      </div>
+      <div id="watchlist-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 hidden"></div>
+    </div>
+  </main>
+
+  <!-- Company modal -->
+  <div id="company-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/80 backdrop-blur-sm hidden" role="dialog" aria-modal="true" aria-labelledby="modal-company-name">
+    <div class="bg-slate-900 light:bg-white border border-slate-800 light:border-slate-300 rounded-2xl w-full max-w-2xl max-h-[90vh] overflow-y-auto custom-scrollbar shadow-2xl">
+      <div class="p-6 border-b border-slate-800 light:border-slate-200 flex items-start justify-between sticky top-0 bg-slate-900/95 light:bg-white/95 backdrop-blur z-10">
+        <div class="flex items-center gap-4">
+          <div id="modal-logo-box" class="w-14 h-14 rounded-xl bg-slate-800 light:bg-slate-100 flex items-center justify-center font-black text-lg text-emerald-400 border border-slate-700 light:border-slate-300"></div>
+          <div>
+            <div class="flex items-center gap-2 flex-wrap">
+              <h3 id="modal-company-name" class="text-xl font-bold text-white light:text-slate-900"></h3>
+              <span id="modal-ticker" class="px-2 py-0.5 rounded text-xs font-bold bg-emerald-500/10 text-emerald-400 border border-emerald-500/30"></span>
+            </div>
+            <p id="modal-exchange-country" class="text-xs text-slate-400 mt-1"></p>
+          </div>
+        </div>
+        <button type="button" id="modal-close" class="p-2 text-slate-400 hover:text-white light:hover:text-slate-900 rounded-lg hover:bg-slate-800 light:hover:bg-slate-100 transition" aria-label="Close"><i class="fa-solid fa-xmark text-lg"></i></button>
+      </div>
+      <div class="p-6 space-y-6">
+        <div class="grid grid-cols-3 gap-3 p-4 bg-slate-950/50 light:bg-slate-100 rounded-xl border border-slate-800/80 light:border-slate-200">
+          <div><p class="text-[11px] font-medium text-slate-400 uppercase">Market Cap</p><p id="modal-market-cap" class="text-lg font-bold text-white light:text-slate-900 mt-0.5"></p></div>
+          <div><p class="text-[11px] font-medium text-slate-400 uppercase">Share Price</p><p id="modal-price" class="text-lg font-bold text-white light:text-slate-900 mt-0.5"></p></div>
+          <div><p class="text-[11px] font-medium text-slate-400 uppercase">1Y Return</p><p id="modal-change" class="text-lg font-bold mt-0.5"></p></div>
+        </div>
+        <div class="grid grid-cols-2 gap-4 text-xs">
+          <div class="p-3 bg-slate-800/30 light:bg-slate-50 rounded-xl border border-slate-800 light:border-slate-200"><span class="text-slate-400 block mb-1">Sector</span><span id="modal-sector" class="font-semibold text-slate-200 light:text-slate-800 text-sm"></span></div>
+          <div class="p-3 bg-slate-800/30 light:bg-slate-50 rounded-xl border border-slate-800 light:border-slate-200"><span class="text-slate-400 block mb-1">Founded / Listed</span><span id="modal-founded" class="font-semibold text-slate-200 light:text-slate-800 text-sm"></span></div>
+          <div class="p-3 bg-slate-800/30 light:bg-slate-50 rounded-xl border border-slate-800 light:border-slate-200"><span class="text-slate-400 block mb-1">Headquarters</span><span id="modal-hq" class="font-semibold text-slate-200 light:text-slate-800 text-sm"></span></div>
+          <div class="p-3 bg-slate-800/30 light:bg-slate-50 rounded-xl border border-slate-800 light:border-slate-200"><span class="text-slate-400 block mb-1">Primary Exchange</span><span id="modal-exchange" class="font-semibold text-slate-200 light:text-slate-800 text-sm"></span></div>
+        </div>
+        <div>
+          <h4 class="text-sm font-bold text-white light:text-slate-900 mb-2">Business Overview</h4>
+          <p id="modal-description" class="text-xs text-slate-300 light:text-slate-600 leading-relaxed"></p>
+        </div>
+        <div>
+          <h4 class="text-sm font-bold text-white light:text-slate-900 mb-2">Highlights</h4>
+          <ul id="modal-highlights" class="space-y-1.5 text-xs text-slate-300 light:text-slate-600 list-disc list-inside"></ul>
+        </div>
+        <p class="text-[11px] text-slate-500">Informational only. Not investment advice. Figures may be outdated or approximate.</p>
+      </div>
+      <div class="p-4 border-t border-slate-800 light:border-slate-200 flex justify-between items-center bg-slate-900 light:bg-slate-50">
+        <button type="button" id="modal-watchlist-btn" class="px-4 py-2 rounded-xl text-xs font-semibold flex items-center gap-2 transition"></button>
+        <button type="button" id="modal-close-2" class="px-4 py-2 rounded-xl bg-slate-800 light:bg-slate-200 hover:bg-slate-700 text-xs font-semibold text-slate-200 light:text-slate-800 transition">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <footer class="border-t border-slate-800 light:border-slate-200 bg-brand-navy light:bg-white py-6 mt-auto">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-slate-400">
+      <div><span class="font-bold text-slate-200 light:text-slate-800">AfriMarket Equities</span> &copy; 2026. Informational directory only, not investment advice.</div>
+      <div class="flex items-center gap-6">
+        <a href="/terms.html" class="hover:text-emerald-400 transition">Terms &amp; Privacy</a>
+        <button type="button" data-tab="exchanges" class="tab-link hover:text-emerald-400 transition">Exchange Directory</button>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/vendor/chart.umd.js"></script>
+  <script src="/app.js"></script>
+</body>
+</html>

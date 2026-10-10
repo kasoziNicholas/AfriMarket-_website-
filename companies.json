@@ -1,0 +1,768 @@
+{
+ "meta": {
+  "asOf": "2026-10-11",
+  "dataStatus": "illustrative"
+ },
+ "companies": [
+  {
+   "id": "naspers",
+   "name": "Naspers Ltd",
+   "ticker": "NPN",
+   "exchange": "JSE",
+   "country": "South Africa",
+   "region": "Southern Africa",
+   "sector": "Technology",
+   "marketCapUsd": 38500000000,
+   "price": "ZAR 3,120.00",
+   "change1Y": 18.5,
+   "founded": "1915 / Listed 1994",
+   "headquarters": "Cape Town, South Africa",
+   "description": "Global consumer internet group and a major technology investor, with large stakes through Prosus and Tencent.",
+   "highlights": [
+    "Holding structure via Prosus N.V.",
+    "Exposure to emerging-market tech across Asia, Latin America and Europe"
+   ]
+  },
+  {
+   "id": "firstrand",
+   "name": "FirstRand Limited",
+   "ticker": "FSR",
+   "exchange": "JSE",
+   "country": "South Africa",
+   "region": "Southern Africa",
+   "sector": "Financial Services",
+   "marketCapUsd": 21800000000,
+   "price": "ZAR 68.40",
+   "change1Y": 12.3,
+   "founded": "1998",
+   "headquarters": "Johannesburg, South Africa",
+   "description": "One of Africa's largest financial services groups, offering retail, commercial and investment banking through FNB, RMB and WesBank.",
+   "highlights": [
+    "Strong return on equity among African banks",
+    "Digital retail banking pioneer in Southern Africa"
+   ]
+  },
+  {
+   "id": "mtn-group",
+   "name": "MTN Group Limited",
+   "ticker": "MTN",
+   "exchange": "JSE",
+   "country": "South Africa",
+   "region": "Southern Africa",
+   "sector": "Telecommunications",
+   "marketCapUsd": 13200000000,
+   "price": "ZAR 112.50",
+   "change1Y": 14.8,
+   "founded": "1994",
+   "headquarters": "Johannesburg, South Africa",
+   "description": "Pan-African mobile operator serving hundreds of millions of subscribers across Africa and the Middle East.",
+   "highlights": [
+    "Leading positions in Nigeria, Ghana and South Africa",
+    "Growing MoMo mobile money business"
+   ]
+  },
+  {
+   "id": "dangote-cement",
+   "name": "Dangote Cement Plc",
+   "ticker": "DANGCEM",
+   "exchange": "NGX",
+   "country": "Nigeria",
+   "region": "West Africa",
+   "sector": "Industrial",
+   "marketCapUsd": 11900000000,
+   "price": "NGN 650.00",
+   "change1Y": 34.2,
+   "founded": "1992",
+   "headquarters": "Lagos, Nigeria",
+   "description": "Sub-Saharan Africa's largest cement producer, operating in multiple African countries.",
+   "highlights": [
+    "Dominant domestic market share in Nigeria",
+    "Exports clinker across West and Central Africa"
+   ]
+  },
+  {
+   "id": "cib-egypt",
+   "name": "Commercial International Bank (CIB)",
+   "ticker": "COMI",
+   "exchange": "EGX",
+   "country": "Egypt",
+   "region": "North Africa",
+   "sector": "Financial Services",
+   "marketCapUsd": 6800000000,
+   "price": "EGP 82.50",
+   "change1Y": 28.1,
+   "founded": "1975",
+   "headquarters": "Cairo, Egypt",
+   "description": "Egypt's leading private-sector bank, with corporate, commercial and retail services.",
+   "highlights": [
+    "Heavy weight in the EGX 30 index",
+    "Strong trade finance and digital banking"
+   ]
+  },
+  {
+   "id": "maroc-telecom",
+   "name": "Maroc Telecom (Itissalat Al-Maghrib)",
+   "ticker": "IAM",
+   "exchange": "CSE",
+   "country": "Morocco",
+   "region": "North Africa",
+   "sector": "Telecommunications",
+   "marketCapUsd": 8900000000,
+   "price": "MAD 96.50",
+   "change1Y": 6.4,
+   "founded": "1998",
+   "headquarters": "Rabat, Morocco",
+   "description": "Morocco's incumbent telecom operator with subsidiaries across West and Central Africa.",
+   "highlights": [
+    "Operates in Morocco and several African markets",
+    "Consistently high dividend payouts"
+   ]
+  },
+  {
+   "id": "safaricom",
+   "name": "Safaricom Plc",
+   "ticker": "SCOM",
+   "exchange": "NSE",
+   "country": "Kenya",
+   "region": "East Africa",
+   "sector": "Telecommunications",
+   "marketCapUsd": 4200000000,
+   "price": "KES 16.80",
+   "change1Y": 8.9,
+   "founded": "1997",
+   "headquarters": "Nairobi, Kenya",
+   "description": "East Africa's largest telecom firm, known for pioneering the M-PESA mobile money platform.",
+   "highlights": [
+    "M-PESA is central to Kenya's payments system",
+    "Expanding into Ethiopia"
+   ]
+  },
+  {
+   "id": "standard-bank",
+   "name": "Standard Bank Group",
+   "ticker": "SBK",
+   "exchange": "JSE",
+   "country": "South Africa",
+   "region": "Southern Africa",
+   "sector": "Financial Services",
+   "marketCapUsd": 17800000000,
+   "price": "ZAR 205.00",
+   "change1Y": 15.6,
+   "founded": "1862",
+   "headquarters": "Johannesburg, South Africa",
+   "description": "Africa's largest banking group by assets, active across Sub-Saharan Africa.",
+   "highlights": [
+    "Wide geographic footprint",
+    "ICBC is a major strategic shareholder"
+   ]
+  },
+  {
+   "id": "anglogold-ashanti",
+   "name": "AngloGold Ashanti plc",
+   "ticker": "ANG",
+   "exchange": "JSE",
+   "country": "South Africa",
+   "region": "Southern Africa",
+   "sector": "Mining & Resources",
+   "marketCapUsd": 10400000000,
+   "price": "ZAR 420.00",
+   "change1Y": 26.8,
+   "founded": "2004",
+   "headquarters": "Johannesburg / London",
+   "description": "Global gold producer with operations across Africa, Australia and the Americas.",
+   "highlights": [
+    "Assets include Geita (Tanzania) and Obuasi (Ghana)",
+    "Earnings sensitive to gold prices"
+   ]
+  },
+  {
+   "id": "airtel-africa",
+   "name": "Airtel Africa Plc",
+   "ticker": "AIRTELAFRI",
+   "exchange": "NGX",
+   "country": "Nigeria",
+   "region": "West Africa",
+   "sector": "Telecommunications",
+   "marketCapUsd": 6300000000,
+   "price": "NGN 2,200.00",
+   "change1Y": 21.0,
+   "founded": "2010",
+   "headquarters": "London / Lagos",
+   "description": "Telecom and mobile money provider in 14 Sub-Saharan African countries.",
+   "highlights": [
+    "Large subscriber base across Nigeria and East Africa",
+    "Growing Airtel Money business"
+   ]
+  },
+  {
+   "id": "gold-fields",
+   "name": "Gold Fields Limited",
+   "ticker": "GFI",
+   "exchange": "JSE",
+   "country": "South Africa",
+   "region": "Southern Africa",
+   "sector": "Mining & Resources",
+   "marketCapUsd": 14200000000,
+   "price": "ZAR 285.00",
+   "change1Y": 22.4,
+   "founded": "1887",
+   "headquarters": "Johannesburg, South Africa",
+   "description": "Diversified gold producer with mines in Australia, South Africa, Ghana, Chile and Peru.",
+   "highlights": [
+    "Owns the deep-level South Deep mine",
+    "Dual-listed on JSE and NYSE"
+   ]
+  },
+  {
+   "id": "seplat-energy",
+   "name": "Seplat Energy Plc",
+   "ticker": "SEPLAT",
+   "exchange": "NGX",
+   "country": "Nigeria",
+   "region": "West Africa",
+   "sector": "Energy & Utilities",
+   "marketCapUsd": 2100000000,
+   "price": "NGN 3,400.00",
+   "change1Y": 41.5,
+   "founded": "2009",
+   "headquarters": "Lagos, Nigeria",
+   "description": "Indigenous Nigerian oil and gas producer supplying gas to the domestic power sector.",
+   "highlights": [
+    "Key gas supplier to Nigeria's grid",
+    "Dual-listed on NGX and LSE"
+   ]
+  },
+  {
+   "id": "ecobank-transnational",
+   "name": "Ecobank Transnational Incorporated",
+   "ticker": "ETI",
+   "exchange": "BRVM",
+   "country": "Togo / BRVM Region",
+   "region": "West Africa",
+   "sector": "Financial Services",
+   "marketCapUsd": 1100000000,
+   "price": "XOF 115.00",
+   "change1Y": 11.2,
+   "founded": "1985",
+   "headquarters": "Lome, Togo",
+   "description": "Pan-African banking group present in over 30 African countries.",
+   "highlights": [
+    "Broad West, Central and East African footprint",
+    "Cross-border trade settlement focus"
+   ]
+  },
+  {
+   "id": "attijariwafa-bank",
+   "name": "Attijariwafa Bank",
+   "ticker": "ATW",
+   "exchange": "CSE",
+   "country": "Morocco",
+   "region": "North Africa",
+   "sector": "Financial Services",
+   "marketCapUsd": 11500000000,
+   "price": "MAD 510.00",
+   "change1Y": 17.3,
+   "founded": "1904",
+   "headquarters": "Casablanca, Morocco",
+   "description": "Morocco's largest bank and a major institution in North and Francophone West Africa.",
+   "highlights": [
+    "Large network across Africa and Europe",
+    "Dominant in Moroccan retail and corporate banking"
+   ]
+  },
+  {
+   "id": "eabl",
+   "name": "East African Breweries PLC (EABL)",
+   "ticker": "EABL",
+   "exchange": "NSE",
+   "country": "Kenya",
+   "region": "East Africa",
+   "sector": "Consumer Goods",
+   "marketCapUsd": 920000000,
+   "price": "KES 145.00",
+   "change1Y": 5.2,
+   "founded": "1922",
+   "headquarters": "Nairobi, Kenya",
+   "description": "East Africa's leading beverage company with brands such as Tusker and Guinness.",
+   "highlights": [
+    "Majority-owned by Diageo",
+    "Operates in Kenya, Uganda and Tanzania"
+   ]
+  },
+  {
+   "id": "mtn-nigeria",
+   "name": "MTN Nigeria Communications Plc",
+   "ticker": "MTNN",
+   "exchange": "NGX",
+   "country": "Nigeria",
+   "region": "West Africa",
+   "sector": "Telecommunications",
+   "marketCapUsd": 4800000000,
+   "price": "NGN 230.00",
+   "change1Y": -2.4,
+   "founded": "2001",
+   "headquarters": "Lagos, Nigeria",
+   "description": "Largest telecom operator in Nigeria, offering voice, data and fintech services.",
+   "highlights": [
+    "Early 5G deployment in West Africa",
+    "Growing MoMo Payment Service Bank"
+   ]
+  },
+  {
+   "id": "sonatel",
+   "name": "Sonatel",
+   "ticker": "SNTS",
+   "exchange": "BRVM",
+   "country": "Senegal",
+   "region": "West Africa",
+   "sector": "Telecommunications",
+   "marketCapUsd": 2900000000,
+   "price": "XOF 18,200",
+   "change1Y": 15.1,
+   "founded": "1985",
+   "headquarters": "Dakar, Senegal",
+   "description": "One of the largest companies on the BRVM regional exchange; telecom services in Senegal, Mali, Guinea and more.",
+   "highlights": [
+    "Heavyweight BRVM constituent",
+    "Orange Group is the strategic shareholder"
+   ]
+  },
+  {
+   "id": "equity-group",
+   "name": "Equity Group Holdings Plc",
+   "ticker": "EQTY",
+   "exchange": "NSE",
+   "country": "Kenya",
+   "region": "East Africa",
+   "sector": "Financial Services",
+   "marketCapUsd": 1250000000,
+   "price": "KES 42.00",
+   "change1Y": 11.8,
+   "founded": "1984",
+   "headquarters": "Nairobi, Kenya",
+   "description": "Large East and Central African financial group with banks in Kenya, DRC, Uganda, Rwanda and more.",
+   "highlights": [
+    "Expansion in DRC via Equity BCDC",
+    "Strong SME and agency banking"
+   ]
+  },
+  {
+   "id": "fnb-botswana",
+   "name": "First National Bank of Botswana",
+   "ticker": "FNBB",
+   "exchange": "BSE",
+   "country": "Botswana",
+   "region": "Southern Africa",
+   "sector": "Financial Services",
+   "marketCapUsd": 850000000,
+   "price": "BWP 4.10",
+   "change1Y": 9.3,
+   "founded": "1991",
+   "headquarters": "Gaborone, Botswana",
+   "description": "One of Botswana's largest commercial banks, offering retail and commercial banking.",
+   "highlights": [
+    "Strong domestic market position",
+    "Part of the FirstRand group"
+   ]
+  },
+  {
+   "id": "eastern-company",
+   "name": "Eastern Company S.A.E.",
+   "ticker": "EAST",
+   "exchange": "EGX",
+   "country": "Egypt",
+   "region": "North Africa",
+   "sector": "Consumer Goods",
+   "marketCapUsd": 1400000000,
+   "price": "EGP 27.50",
+   "change1Y": 31.0,
+   "founded": "1920",
+   "headquarters": "Giza, Egypt",
+   "description": "Egypt's main tobacco manufacturer and distributor.",
+   "highlights": [
+    "Cash-generative domestic business",
+    "Regular dividends"
+   ]
+  },
+  {
+   "id": "zambian-breweries",
+   "name": "Zambian Breweries Plc",
+   "ticker": "ZAMBREW",
+   "exchange": "LuSE",
+   "country": "Zambia",
+   "region": "Southern Africa",
+   "sector": "Consumer Goods",
+   "marketCapUsd": 280000000,
+   "price": "ZMW 8.50",
+   "change1Y": 14.5,
+   "founded": "1968",
+   "headquarters": "Lusaka, Zambia",
+   "description": "Largest beer maker in Zambia, part of AB InBev, producing Mosi and Castle Lager.",
+   "highlights": [
+    "Anchor stock on the Lusaka exchange",
+    "Local barley and maize supply chains"
+   ]
+  },
+  {
+   "id": "gcb-bank",
+   "name": "GCB Bank PLC",
+   "ticker": "GCB",
+   "exchange": "GSE",
+   "country": "Ghana",
+   "region": "West Africa",
+   "sector": "Financial Services",
+   "marketCapUsd": 310000000,
+   "price": "GHS 3.80",
+   "change1Y": 7.1,
+   "founded": "1953",
+   "headquarters": "Accra, Ghana",
+   "description": "One of Ghana's largest indigenous banks with a nationwide branch network.",
+   "highlights": [
+    "Wide branch and agent network",
+    "Active in government securities"
+   ]
+  },
+  {
+   "id": "mtn-ghana",
+   "name": "Scancom PLC (MTN Ghana)",
+   "ticker": "MTNGH",
+   "exchange": "GSE",
+   "country": "Ghana",
+   "region": "West Africa",
+   "sector": "Telecommunications",
+   "marketCapUsd": 1650000000,
+   "price": "GHS 1.60",
+   "change1Y": 28.0,
+   "founded": "1996",
+   "headquarters": "Accra, Ghana",
+   "description": "Leading telecom provider in Ghana, operating MobileMoney Limited.",
+   "highlights": [
+    "One of the largest companies on the Ghana Stock Exchange",
+    "Large mobile money base"
+   ]
+  },
+  {
+   "id": "shoprite",
+   "name": "Shoprite Holdings Ltd",
+   "ticker": "SHP",
+   "exchange": "JSE",
+   "country": "South Africa",
+   "region": "Southern Africa",
+   "sector": "Consumer Goods",
+   "marketCapUsd": 8200000000,
+   "price": "ZAR 268.00",
+   "change1Y": 19.8,
+   "founded": "1979",
+   "headquarters": "Cape Town, South Africa",
+   "description": "Africa's largest food retailer, operating thousands of stores across several African countries.",
+   "highlights": [
+    "Strong supply-chain network",
+    "Sixty60 on-demand delivery growth"
+   ]
+  },
+  {
+   "id": "vodacom-group",
+   "name": "Vodacom Group Limited",
+   "ticker": "VOD",
+   "exchange": "JSE",
+   "country": "South Africa",
+   "region": "Southern Africa",
+   "sector": "Telecommunications",
+   "marketCapUsd": 11400000000,
+   "price": "ZAR 102.00",
+   "change1Y": 3.8,
+   "founded": "1993",
+   "headquarters": "Midrand, South Africa",
+   "description": "African connectivity and financial services provider majority-owned by Vodafone.",
+   "highlights": [
+    "Operations in South Africa, DRC, Tanzania, Mozambique and Egypt",
+    "M-Pesa and VodaPay platforms"
+   ]
+  },
+  {
+   "id": "tmg-holding",
+   "name": "Talaat Moustafa Group Holding (TMG)",
+   "ticker": "TMGH",
+   "exchange": "EGX",
+   "country": "Egypt",
+   "region": "North Africa",
+   "sector": "Real Estate",
+   "marketCapUsd": 2800000000,
+   "price": "EGP 58.00",
+   "change1Y": 82.5,
+   "founded": "1970",
+   "headquarters": "Cairo, Egypt",
+   "description": "Egypt's largest real estate developer, known for Madinaty and Noor.",
+   "highlights": [
+    "Large land bank near Cairo",
+    "Hospitality and urban projects"
+   ]
+  },
+  {
+   "id": "kcb-group",
+   "name": "KCB Group Plc",
+   "ticker": "KCB",
+   "exchange": "NSE",
+   "country": "Kenya",
+   "region": "East Africa",
+   "sector": "Financial Services",
+   "marketCapUsd": 810000000,
+   "price": "KES 32.50",
+   "change1Y": 24.1,
+   "founded": "1896",
+   "headquarters": "Nairobi, Kenya",
+   "description": "One of East Africa's oldest and largest banking networks, active in Kenya, Tanzania, Rwanda, Uganda and DRC.",
+   "highlights": [
+    "Regional footprint expanded through acquisitions",
+    "Major lender to infrastructure"
+   ]
+  },
+  {
+   "id": "bua-cement",
+   "name": "BUA Cement Plc",
+   "ticker": "BUACEMENT",
+   "exchange": "NGX",
+   "country": "Nigeria",
+   "region": "West Africa",
+   "sector": "Industrial",
+   "marketCapUsd": 5900000000,
+   "price": "NGN 140.00",
+   "change1Y": 38.6,
+   "founded": "2008",
+   "headquarters": "Lagos / Sokoto, Nigeria",
+   "description": "Nigeria's second-largest cement producer with plants in Sokoto and Edo States.",
+   "highlights": [
+    "Ongoing capacity expansion",
+    "Constituent of the NGX 30 index"
+   ]
+  },
+  {
+   "id": "lafargeholcim-maroc",
+   "name": "LafargeHolcim Maroc",
+   "ticker": "LHM",
+   "exchange": "CSE",
+   "country": "Morocco",
+   "region": "North Africa",
+   "sector": "Industrial",
+   "marketCapUsd": 4100000000,
+   "price": "MAD 1,820.00",
+   "change1Y": 11.2,
+   "founded": "1928",
+   "headquarters": "Casablanca, Morocco",
+   "description": "Leading building materials company in Morocco.",
+   "highlights": [
+    "Supplies major infrastructure projects",
+    "Large weight on the Casablanca bourse"
+   ]
+  },
+  {
+   "id": "sasol",
+   "name": "Sasol Limited",
+   "ticker": "SOL",
+   "exchange": "JSE",
+   "country": "South Africa",
+   "region": "Southern Africa",
+   "sector": "Energy & Utilities",
+   "marketCapUsd": 5200000000,
+   "price": "ZAR 148.00",
+   "change1Y": -28.4,
+   "founded": "1950",
+   "headquarters": "Johannesburg, South Africa",
+   "description": "Integrated chemicals and energy company known for coal-to-liquids technology.",
+   "highlights": [
+    "Fischer-Tropsch synthetic fuels pioneer",
+    "Pivoting toward lower-carbon energy"
+   ]
+  },
+  {
+   "id": "zenith-bank",
+   "name": "Zenith Bank Plc",
+   "ticker": "ZENITHBANK",
+   "exchange": "NGX",
+   "country": "Nigeria",
+   "region": "West Africa",
+   "sector": "Financial Services",
+   "marketCapUsd": 1850000000,
+   "price": "NGN 38.50",
+   "change1Y": 29.5,
+   "founded": "1990",
+   "headquarters": "Lagos, Nigeria",
+   "description": "One of Nigeria's largest banks, noted for profitability and digital banking.",
+   "highlights": [
+    "Strong capital base",
+    "Corporate and institutional focus"
+   ]
+  },
+  {
+   "id": "palm-hills",
+   "name": "Palm Hills Developments",
+   "ticker": "PHDC",
+   "exchange": "EGX",
+   "country": "Egypt",
+   "region": "North Africa",
+   "sector": "Real Estate",
+   "marketCapUsd": 480000000,
+   "price": "EGP 3.90",
+   "change1Y": 48.2,
+   "founded": "1997",
+   "headquarters": "Cairo, Egypt",
+   "description": "Egyptian developer of residential, commercial and resort communities.",
+   "highlights": [
+    "Large land bank around Cairo and the North Coast",
+    "Active retail investor trading"
+   ]
+  },
+  {
+   "id": "nestle-nigeria",
+   "name": "Nestle Nigeria Plc",
+   "ticker": "NESTLE",
+   "exchange": "NGX",
+   "country": "Nigeria",
+   "region": "West Africa",
+   "sector": "Consumer Goods",
+   "marketCapUsd": 680000000,
+   "price": "NGN 900.00",
+   "change1Y": -15.2,
+   "founded": "1961",
+   "headquarters": "Lagos, Nigeria",
+   "description": "Food and beverage maker producing Maggi, Milo and Nescafe.",
+   "highlights": [
+    "Subsidiary of Nestle S.A.",
+    "Local raw-material sourcing"
+   ]
+  },
+  {
+   "id": "letshego",
+   "name": "Letshego Holdings Limited",
+   "ticker": "LETSHEGO",
+   "exchange": "BSE",
+   "country": "Botswana",
+   "region": "Southern Africa",
+   "sector": "Financial Services",
+   "marketCapUsd": 210000000,
+   "price": "BWP 1.35",
+   "change1Y": 6.8,
+   "founded": "1998",
+   "headquarters": "Gaborone, Botswana",
+   "description": "Retail financial services group focused on inclusive finance and micro-lending across Africa.",
+   "highlights": [
+    "Lends mainly to public-sector employees",
+    "Digital app expansion"
+   ]
+  },
+  {
+   "id": "sidpec",
+   "name": "Sidi Kerir Petrochemicals (Sidpec)",
+   "ticker": "SKPC",
+   "exchange": "EGX",
+   "country": "Egypt",
+   "region": "North Africa",
+   "sector": "Energy & Utilities",
+   "marketCapUsd": 720000000,
+   "price": "EGP 30.50",
+   "change1Y": 36.4,
+   "founded": "1997",
+   "headquarters": "Alexandria, Egypt",
+   "description": "Egypt's leading petrochemical producer of ethylene and polyethylene.",
+   "highlights": [
+    "Key to Egypt's industrial supply chain",
+    "Export earnings in foreign currency"
+   ]
+  },
+  {
+   "id": "seed-co",
+   "name": "Seed Co International Limited",
+   "ticker": "SCIL",
+   "exchange": "LuSE",
+   "country": "Zambia / Zimbabwe",
+   "region": "Southern Africa",
+   "sector": "Agriculture",
+   "marketCapUsd": 140000000,
+   "price": "USD 0.28",
+   "change1Y": 4.2,
+   "founded": "1940",
+   "headquarters": "Gaborone / Lusaka",
+   "description": "Major certified seed company in Sub-Saharan Africa, producing hybrid maize, wheat and soya seed.",
+   "highlights": [
+    "Climate-resilient seed breeding",
+    "Listed on LuSE and VFEX"
+   ]
+  },
+  {
+   "id": "gtco",
+   "name": "Guaranty Trust Holding Co (GTCO)",
+   "ticker": "GTCO",
+   "exchange": "NGX",
+   "country": "Nigeria",
+   "region": "West Africa",
+   "sector": "Financial Services",
+   "marketCapUsd": 1450000000,
+   "price": "NGN 45.00",
+   "change1Y": 33.1,
+   "founded": "1990",
+   "headquarters": "Lagos, Nigeria",
+   "description": "Financial holding company with banking operations in West Africa, East Africa and the UK.",
+   "highlights": [
+    "Known for cost efficiency",
+    "Expanding into asset management and payments"
+   ]
+  },
+  {
+   "id": "sg-cote-divoire",
+   "name": "Societe Generale Cote d'Ivoire",
+   "ticker": "SGBC",
+   "exchange": "BRVM",
+   "country": "Cote d'Ivoire",
+   "region": "West Africa",
+   "sector": "Financial Services",
+   "marketCapUsd": 980000000,
+   "price": "XOF 18,500",
+   "change1Y": 19.4,
+   "founded": "1962",
+   "headquarters": "Abidjan, Cote d'Ivoire",
+   "description": "Leading bank in the Ivorian market and a major BRVM constituent.",
+   "highlights": [
+    "Strong balance sheet growth",
+    "Constituent of BRVM 30"
+   ]
+  },
+  {
+   "id": "sanlam",
+   "name": "Sanlam Limited",
+   "ticker": "SLM",
+   "exchange": "JSE",
+   "country": "South Africa",
+   "region": "Southern Africa",
+   "sector": "Financial Services",
+   "marketCapUsd": 9100000000,
+   "price": "ZAR 76.50",
+   "change1Y": 16.2,
+   "founded": "1918",
+   "headquarters": "Cape Town, South Africa",
+   "description": "Large African non-banking financial services group covering insurance and asset management.",
+   "highlights": [
+    "Presence across many African countries",
+    "Large assets under management"
+   ]
+  },
+  {
+   "id": "centum-investment",
+   "name": "Centum Investment Company Plc",
+   "ticker": "CTUM",
+   "exchange": "NSE",
+   "country": "Kenya",
+   "region": "East Africa",
+   "sector": "Financial Services",
+   "marketCapUsd": 85000000,
+   "price": "KES 8.80",
+   "change1Y": -4.5,
+   "founded": "1967",
+   "headquarters": "Nairobi, Kenya",
+   "description": "East African investment company with stakes in real estate, financial services and energy.",
+   "highlights": [
+    "Developer of Two Rivers in Nairobi",
+    "Cross-listed on the Uganda Securities Exchange"
+   ]
+  }
+ ]
+}
